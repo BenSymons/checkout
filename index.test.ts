@@ -19,4 +19,10 @@ describe('tests', () => {
     expect(twoDoubles).toBe(53);
     expect(threeDoubles).toBe(90);
   });
+  test(`Given at least one triple is thrown
+        Checkout returns the total score`, () => {
+    const oneTriple = checkout(['T20', '10', '3']); //73
+    const twoTriples = checkout(['T16', 'T18', '10']); //112
+    const threeTriples = checkout(['T15', 'T20', 'T20']); //165
+  })
 })
