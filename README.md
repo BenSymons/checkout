@@ -4,6 +4,8 @@ This kata is about the game darts. In darts, you thow three darts at a dart boar
 
 For this kata you will be writing code for a function called `checkout`. This function will take one param which will be an array of strings. Each string will represent a score for a single dart. The checkout function should return the total score of those three darts. If given an empty array, this will represent three misses and so shoulc return 0.
 
+---
+
 The strings representing each score will be as followed:
 
 ```
@@ -14,3 +16,7 @@ The strings representing each score will be as followed:
 ```
 
 the number by itself will score just that e.g. `checkout('5', '4')` should return `9`. The number prefixed with a 'D' means it would be a double so would score double the number e.g. `checkout(['D10'])` should return `20`. The number prefixed with 'T' means it would be a triple so the score would be tripled e.g. `checkout(['T15'])` should return `45`. The outer ring `'ring'` will score 25 and the `'bullseye'` will score 50.
+
+## Instructions
+
+write your code in the index.ts file. There have been some types already provided. Feel free to alter these or create new types. When you want to test your function, run `npm test`. This will compile your tests and run jest at the same time. Do not alter the index.js file generated as your code will be overwritten.
