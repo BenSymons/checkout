@@ -5,11 +5,11 @@ branch=$(git rev-parse --abbrev-ref HEAD)
 
 echo $branch
 
-if [ "$branch" = "main" ]
+if [ "$branch" == "main" ]
 then
 # read -p "this will push to main are you sure you want to do this? (y/n)" $answer
 
-if [ $answer = 'n' ]
+if [ $answer == 'n' ]
 then
   exit 1
 else
