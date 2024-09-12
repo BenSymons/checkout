@@ -1,5 +1,7 @@
 #!/bin/sh
 
+exec < /dev/tty
+
 echo "pushing"
 branch=$(git rev-parse --abbrev-ref HEAD)
 
