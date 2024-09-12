@@ -13,8 +13,10 @@ then
 
 if [ "$answer" = 'n' ]
 then
+  echo "in n"
   exit 1
 else
+  echo "in not n"
   exit 0
 fi
 fi
