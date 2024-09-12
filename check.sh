@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 echo "checking..."
-read answer
+read -p "what is your answer: " answer
 
 echo "your answer is $answer"
