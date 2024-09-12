@@ -7,7 +7,8 @@ echo $branch
 
 if [ "$branch" = "main" ]
 then
-read -p "this will push to main are you sure you want to do this? (y/n)" $answer
+# read -p "this will push to main are you sure you want to do this? (y/n)" $answer
+
 if [ $answer = 'n' ]
 then
   exit 1
