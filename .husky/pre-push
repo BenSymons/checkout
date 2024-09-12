@@ -1,0 +1,17 @@
+#!/bin/sh
+
+echo "pushing"
+branch=$(git rev-parse --abbrev-ref HEAD)
+
+echo $branch
+
+if [ "$branch" = "main" ]
+then
+read -p "this will push to main are you sure you want to do this? (y/n)" $answer
+if [ $answer is 'n' ]
+then
+  exit 1
+else
+  exit 0
+fi
+fi
