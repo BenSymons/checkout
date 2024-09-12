@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "test": "tsc index.ts && jest",
-    "precommit": "./check.sh",
     "prepare": "husky"
   },
   "keywords": [],
